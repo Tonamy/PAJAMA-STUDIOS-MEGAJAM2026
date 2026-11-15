@@ -437,6 +437,11 @@ body.dc .dscene{display:grid;animation:noteIn .5s steps(5) both}
 .studio{margin:0 0 .9rem;font:400 clamp(1.05rem,2.2vw,1.4rem)/1.2 var(--display);letter-spacing:.14em;color:var(--brass)}
 .studio span{font:400 .9rem/1 var(--type);letter-spacing:.05em;color:#e9e0cf;margin-left:.4rem}
 .studio-line{margin:0 0 1rem;font:400 clamp(1.1rem,2.4vw,1.5rem)/1.2 var(--display);letter-spacing:.14em;color:var(--brass)}
+
+/* v17: team logo */
+.logo{display:block;margin:0 auto 1rem;width:auto;height:auto;object-fit:contain;filter:drop-shadow(4px 5px 0 var(--shadow))}
+.hero-logo{max-width:min(240px,60vw);max-height:clamp(84px,16vw,130px)}
+.foot-logo{max-width:140px;max-height:80px;margin:1.6rem auto .8rem}
 </style>
 </head>
 <body>
@@ -537,6 +542,7 @@ body.dc .dscene{display:grid;animation:noteIn .5s steps(5) both}
 <!-- ================= HERO ================= -->
 <section class="hero" id="top">
   <div class="hero-in">
+    <img class="logo hero-logo" data-logo alt="PIJAMA STUDIOS logo" width="240" height="120">
     <p class="studio">PIJAMA STUDIOS <span data-i="presents">presents</span></p>
     <p class="eyebrow" data-i="eyebrow">Epic AI MegaJam 2026 · Theme: Director's Cut</p>
     <h1 class="sticker" data-bind="title">That's All...</h1>
@@ -689,7 +695,7 @@ body.dc .dscene{display:grid;animation:noteIn .5s steps(5) both}
   <div class="prem">
     <div>
       <p data-i="p1">You're a dancer trapped in a 1930s speakeasy, and the Director calls you to the stage three times. Between shows, eight tables murmur in Orrin, a language that doesn't exist. Subtitles help, in English or Spanish.</p>
-      <p data-i="p2">Only one table says the briefcase code, and it changes every game. Earn $500 to bribe the guard, find the second half of the giant zipper in the cans, and escape before the clock runs out: 5, 7 or 12 minutes.</p>
+      <p data-i="p2">Only one table says the briefcase code, and it changes every game. Earn $200 to bribe the guard, find the second half of the giant zipper in the cans, and escape before the clock runs out: 5, 7 or 12 minutes.</p>
       <p data-i="p3">The experiment is in the ear: here information isn't handed over. You listen, compare and deduce.</p>
       <div class="stats">
         <div class="stat s1"><strong>8</strong><span data-i="st1">Tables</span></div>
@@ -758,7 +764,7 @@ body.dc .dscene{display:grid;animation:noteIn .5s steps(5) both}
   </div>
 
   <div class="proto-bar-cta">
-    <p data-i="barCtaTxt">Want to test the full bar loop (table cleaning, falling glass catch, 8-can circular lid opening &amp; $500 bouncer bribe)?</p>
+    <p data-i="barCtaTxt">Want to test the full bar loop (table cleaning, falling glass catch, 8-can circular lid opening &amp; $200 bouncer bribe)?</p>
     <a class="btn primary" href="bar-del-maletin.html" target="_blank" rel="noopener"><span data-i="barCtaBtn">Play the full demo</span><svg class="ico arr" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-arrow"/></svg></a>
   </div>
 
@@ -766,7 +772,7 @@ body.dc .dscene{display:grid;animation:noteIn .5s steps(5) both}
     <article class="mcard tilt">
       <span class="mtag" data-i="mg1Tag">Reflexes · Physics</span>
       <h3 data-i="mg1H">The Falling Glass</h3>
-      <p data-i="mg1D">Clean tables to earn cash, but watch the edge: when a glass slips, catch it mid-air in the sweet spot for a $50 tip—or pay for the broken glass.</p>
+      <p data-i="mg1D">Clean tables to earn cash, but watch the edge: when a glass slips, catch it mid-air in the sweet spot for a $25 tip—or pay for the broken glass.</p>
     </article>
 
     <article class="mcard tilt">
@@ -777,7 +783,7 @@ body.dc .dscene{display:grid;animation:noteIn .5s steps(5) both}
 
     <article class="mcard tilt">
       <span class="mtag" data-i="mg3Tag">Economy · Access</span>
-      <h3 data-i="mg3H">The $500 Bribe</h3>
+      <h3 data-i="mg3H">The $200 Bribe</h3>
       <p data-i="mg3D">Hustle tips across the bar to pay off the VIP bouncer guarding the office—unlocking access to the 4-digit briefcase.</p>
     </article>
 
@@ -814,7 +820,7 @@ body.dc .dscene{display:grid;animation:noteIn .5s steps(5) both}
   <header class="scene-head"><span class="card-no" data-i="scUe">Scene 5</span><h2 class="sticker" data-i="ueH">From HTML to Unreal</h2></header>
   <p class="proto-intro" data-i="ueIntro">Once a mechanic felt right in HTML, we wrote it into the spec and handed it to Claude MCP in phases. The spec also listed what already existed in Unreal (M_Can, BP_Can, tapa.png) and marked it off-limits, so nothing that worked got rebuilt.</p>
   <div class="proto-grid"><article class="mcard tilt"><span class="mtag" data-i="ue1Tag">Match length</span><h3 data-i="ue1H">5 · 7 · 12 min</h3><p data-i="ue1D">Three modes, set from the GameMode. Always three dance shows, evenly spaced.</p></article><article class="mcard tilt"><span class="mtag" data-i="ue2Tag">Rising tension</span><h3 data-i="ue2H">1.0× · 1.5× · 1.8×</h3><p data-i="ue2D">Each show speeds up the music and the notes: 120, 180 and 216 BPM.</p></article><article class="mcard tilt"><span class="mtag" data-i="ue3Tag">Late to the stage</span><h3 data-i="ue3H">2 strikes</h3><p data-i="ue3D">Ignore the Director's call and you are dragged on stage. Twice, and it's game over.</p></article><article class="mcard tilt"><span class="mtag" data-i="ue4Tag">Cutscenes</span><h3 data-i="ue4H">4 videos</h3><p data-i="ue4D">Intro, stage call, guard bribe and escape, played in a full-screen widget that pauses the clocks.</p></article></div>
-  <div class="stack" style="margin-top:2.4rem"><div class="st1"><b>WBP_DanceModal</b><span data-i="mi1">Same four lanes, now with three speeds.</span></div><div class="st2"><b>WBP_GlassModal</b><span data-i="mi2">Same physics, g = 408 px/s²: a perfect catch pays $50.</span></div><div class="st3"><b>BP_Can + WBP_CanModal</b><span data-i="mi3">Eight cans, twenty art textures, a lid you open by tracing a circle in under 2 s.</span></div><div class="st1"><b>VID_03 + briefcase</b><span data-i="mi4">$500 to the guard, a cutscene, then three tries at the 4-digit code.</span></div></div>
+  <div class="stack" style="margin-top:2.4rem"><div class="st1"><b>WBP_DanceModal</b><span data-i="mi1">Same four lanes, now with three speeds.</span></div><div class="st2"><b>WBP_GlassModal</b><span data-i="mi2">Same physics, g = 408 px/s²: a perfect catch pays $25.</span></div><div class="st3"><b>BP_Can + WBP_CanModal</b><span data-i="mi3">Eight cans, twenty art textures, a lid you open by tracing a circle in under 2 s.</span></div><div class="st1"><b>VID_03 + briefcase</b><span data-i="mi4">$200 to the guard, a cutscene, then three tries at the 4-digit code.</span></div></div>
   </section>
 
 <!-- ================= SCENE 6: TECH SHEET ================= -->
@@ -891,6 +897,7 @@ body.dc .dscene{display:grid;animation:noteIn .5s steps(5) both}
   <nav class="flinks" aria-label="Team links">
     <a href="#top"><span data-i="top">Back to top</span><svg class="ico arr up" viewBox="0 0 24 24" aria-hidden="true"><use href="#i-arrow"/></svg></a>
   </nav>
+  <img class="logo foot-logo" data-logo alt="PIJAMA STUDIOS logo" width="120" height="60">
   <p class="legal"><span>PIJAMA STUDIOS · Epic AI MegaJam 2026 · Director's Cut</span><span data-i="legalChar">The character used is free of copyright.</span></p>
 </footer>
 
@@ -903,6 +910,7 @@ body.dc .dscene{display:grid;animation:noteIn .5s steps(5) both}
 <script>
 /* ================= CONFIG: edit these ================= */
 const CONFIG = {
+  logo: "mi-juego/img/logo/logo.jpeg",   // team logo (PNG with transparent background, SVG or WebP also work)
   base: "mi-juego/",   // folder that holds img/ and video/ (index.html sits next to it)
   title: "That's All...",      // game title (not translated)
   downloadUrl: "",     // your itch.io game page (or a direct download). Empty = button shows a "coming soon" bubble
@@ -931,13 +939,13 @@ const I18N = {
     dDurLbl:"Sequence duration:",
     dHudTime:"Time left", dHudCombo:"Streak", dHudPat:"Director Patience", dHudScore:"Score",
     dOneHand:"One hand:", dStart:"▶ Start / Restart Dance",
-    barCtaTxt:"Want to test the full bar loop (table cleaning, falling glass catch, 8-can circular lid opening & $500 bouncer bribe)?",
+    barCtaTxt:"Want to test the full bar loop (table cleaning, falling glass catch, 8-can circular lid opening & $200 bouncer bribe)?",
     barCtaBtn:"Play the full demo",
     mg1Tag:"Reflexes · Physics", mg1H:"The Falling Glass",
-    mg1D:"Clean tables to earn cash, but watch the edge: when a glass slips, catch it mid-air in the sweet spot for a $50 tip—or pay for the broken glass.",
+    mg1D:"Clean tables to earn cash, but watch the edge: when a glass slips, catch it mid-air in the sweet spot for a $25 tip—or pay for the broken glass.",
     mg2Tag:"Rhythm · 120–216 BPM", mg2H:"One-Hand Dance Show",
     mg2D:"Three mandatory stage calls that accelerate (1.0x, 1.5x, 1.8x). Simplified to four one-hand arrow keys after playtesting showed chords broke the flow.",
-    mg3Tag:"Economy · Access", mg3H:"The $500 Bribe",
+    mg3Tag:"Economy · Access", mg3H:"The $200 Bribe",
     mg3D:"Hustle tips across the bar to pay off the VIP bouncer guarding the office—unlocking access to the 4-digit briefcase.",
     mg4Tag:"Gesture · Audio", mg4H:"The Can Shelf",
     mg4D:"Shake cans to tell solid clues from hollow decoys by weight and sound, then trace a fast circle under 2 seconds to pop the lid.",
@@ -949,11 +957,11 @@ const I18N = {
     ps3D:"With dev environments ready, Claude MCP migrated the logic into Blueprints & C++ in phases, while Margariza and Ceci polished the final Unreal details.",
     nProto:"Pre-jam dry runs taught us to prepare our MCP and dev environments beforehand. Feeding Claude our living .md spec plus validated HTML code let us migrate mechanics with exact Unreal object names (BP_Can, M_Can, WBP_DanceModal) instead of starting from scratch.",
     delH:"Deleted scenes", del1H:"Coat search", del1D:"Cut: it slowed the pacing and added nothing to the code hunt.", del2H:"Darts", del2D:"Cut: fun for ten seconds, dead weight for a five-minute run.",
-    scUe:"Scene 5", ueH:"From HTML to Unreal", ueIntro:"Once a mechanic felt right in HTML, we wrote it into the spec and handed it to Claude MCP in phases. The spec also listed what already existed in Unreal (M_Can, BP_Can, tapa.png) and marked it off-limits, so nothing that worked got rebuilt.", ue1Tag:"Match length", ue1H:"5 · 7 · 12 min", ue1D:"Three modes, set from the GameMode. Always three dance shows, evenly spaced.", ue2Tag:"Rising tension", ue2H:"1.0× · 1.5× · 1.8×", ue2D:"Each show speeds up the music and the notes: 120, 180 and 216 BPM.", ue3Tag:"Late to the stage", ue3H:"2 strikes", ue3D:"Ignore the Director's call and you are dragged on stage. Twice, and it's game over.", ue4Tag:"Cutscenes", ue4H:"4 videos", ue4D:"Intro, stage call, guard bribe and escape, played in a full-screen widget that pauses the clocks.", mi1:"Same four lanes, now with three speeds.", mi2:"Same physics, g = 408 px/s²: a perfect catch pays $50.", mi3:"Eight cans, twenty art textures, a lid you open by tracing a circle in under 2 s.", mi4:"$500 to the guard, a cutscene, then three tries at the 4-digit code.", shotsH:"Behind the scenes", shot1:"Discord live stream: debugging together", shot2:"The living .md, our single source of truth", shot3:"The failed dry run, before we fixed the pipeline", act1T:"Take 1", act1H:"The failed dry run", act1D:"A week before the jam we simulated a past theme, and it fell apart.", act2T:"Take 2", act2H:"The autopsy", act2D:"We listed every bottleneck and mapped each person's strengths.", act3T:"Take 3", act3H:"The pipeline", act3D:"Discord live streams, a living .md spec and Claude MCP, ready before the timer started.", mxH:"Who does what", mxArt:"Art & animation", mxCode:"Code", mxDes:"Gameplay design", mxAud:"Audio", mxUi:"UX, UI & lighting", mxAi:"Prompts & MCP", mxLeg:"● leads · ◐ supports",
+    scUe:"Scene 5", ueH:"From HTML to Unreal", ueIntro:"Once a mechanic felt right in HTML, we wrote it into the spec and handed it to Claude MCP in phases. The spec also listed what already existed in Unreal (M_Can, BP_Can, tapa.png) and marked it off-limits, so nothing that worked got rebuilt.", ue1Tag:"Match length", ue1H:"5 · 7 · 12 min", ue1D:"Three modes, set from the GameMode. Always three dance shows, evenly spaced.", ue2Tag:"Rising tension", ue2H:"1.0× · 1.5× · 1.8×", ue2D:"Each show speeds up the music and the notes: 120, 180 and 216 BPM.", ue3Tag:"Late to the stage", ue3H:"2 strikes", ue3D:"Ignore the Director's call and you are dragged on stage. Twice, and it's game over.", ue4Tag:"Cutscenes", ue4H:"4 videos", ue4D:"Intro, stage call, guard bribe and escape, played in a full-screen widget that pauses the clocks.", mi1:"Same four lanes, now with three speeds.", mi2:"Same physics, g = 408 px/s²: a perfect catch pays $25.", mi3:"Eight cans, twenty art textures, a lid you open by tracing a circle in under 2 s.", mi4:"$200 to the guard, a cutscene, then three tries at the 4-digit code.", shotsH:"Behind the scenes", shot1:"Discord live stream: debugging together", shot2:"The living .md, our single source of truth", shot3:"The failed dry run, before we fixed the pipeline", act1T:"Take 1", act1H:"The failed dry run", act1D:"A week before the jam we simulated a past theme, and it fell apart.", act2T:"Take 2", act2H:"The autopsy", act2D:"We listed every bottleneck and mapped each person's strengths.", act3T:"Take 3", act3H:"The pipeline", act3D:"Discord live streams, a living .md spec and Claude MCP, ready before the timer started.", mxH:"Who does what", mxArt:"Art & animation", mxCode:"Code", mxDes:"Gameplay design", mxAud:"Audio", mxUi:"UX, UI & lighting", mxAi:"Prompts & MCP", mxLeg:"● leads · ◐ supports",
     galH:"Photo gallery", galSoon:"Photos coming soon", galPrev:"Previous photo", galNext:"Next photo", galClose:"Close",
     premiseH:"The premise",
     p1:"You're a dancer trapped in a 1930s speakeasy, and the Director calls you to the stage three times. Between shows, eight tables murmur in Orrin, a language that doesn't exist. Subtitles help, in English or Spanish.",
-    p2:"Only one table says the briefcase code, and it changes every game. Earn $500 to bribe the guard, find the second half of the giant zipper in the cans, and escape before the clock runs out: 5, 7 or 12 minutes.",
+    p2:"Only one table says the briefcase code, and it changes every game. Earn $200 to bribe the guard, find the second half of the giant zipper in the cans, and escape before the clock runs out: 5, 7 or 12 minutes.",
     p3:"The experiment is in the ear: here information isn't handed over. You listen, compare and deduce.",
     st1:"Tables", st2:"Attempts", st3:"Shows",
     n1:"The audio is both ambience and clue. An invented language means nobody “understands” the scene at first: every player starts equally lost.",
@@ -1006,13 +1014,13 @@ const I18N = {
     dDurLbl:"Duración de la secuencia:",
     dHudTime:"Tiempo restante", dHudCombo:"Racha", dHudPat:"Paciencia Director", dHudScore:"Puntos",
     dOneHand:"Una sola mano:", dStart:"▶ Iniciar / Reiniciar Baile",
-    barCtaTxt:"¿Quieres probar el ciclo completo del bar (limpiar mesas, atrapar el vaso, destapar las 8 latas y sobornar al guardia con $500)?",
+    barCtaTxt:"¿Quieres probar el ciclo completo del bar (limpiar mesas, atrapar el vaso, destapar las 8 latas y sobornar al guardia con $200)?",
     barCtaBtn:"Jugar el demo completo (nueva pestaña)",
     mg1Tag:"Reflejos · Física", mg1H:"El Vaso que Cae",
-    mg1D:"Limpia mesas para juntar dinero, pero cuida el borde: cuando un vaso resbale, atrápalo en el aire en la zona justa para ganar $50 de propina—o paga los vidrios rotos.",
+    mg1D:"Limpia mesas para juntar dinero, pero cuida el borde: cuando un vaso resbale, atrápalo en el aire en la zona justa para ganar $25 de propina—o paga los vidrios rotos.",
     mg2Tag:"Ritmo · 120–216 BPM", mg2H:"Show de Baile a Una Mano",
     mg2D:"Tres llamados obligatorios al escenario que aceleran (1.0x, 1.5x, 1.8x). Simplificado a 4 flechas a una mano tras comprobar en HTML que los acordes rompían el ritmo.",
-    mg3Tag:"Economía · Acceso", mg3H:"El Soborno de $500",
+    mg3Tag:"Economía · Acceso", mg3H:"El Soborno de $200",
     mg3D:"Reúne propinas en el bar para sobornar al encargado del reservado y desbloquear el acceso al maletín de 4 dígitos.",
     mg4Tag:"Gesto · Audio", mg4H:"El Estante de Latas",
     mg4D:"Agita las latas para distinguir por peso y sonido cuál esconde la segunda pieza, y traza un círculo en menos de 2 segundos para abrirla.",
@@ -1024,11 +1032,11 @@ const I18N = {
     ps3D:"Con los entornos listos, Claude MCP migró la lógica a Blueprints y C++ por fases, mientras Margariza y Ceci pulieron los detalles finales en Unreal.",
     nProto:"Simular una jam la semana previa nos enseñó a tener los entornos y el MCP listos desde el minuto uno. Alimentar a Claude con nuestro .md vivo y el código HTML validado permitió migrar por fases con los nombres exactos de objetos (BP_Can, M_Can, WBP_DanceModal).",
     delH:"Escenas eliminadas", del1H:"Buscar en abrigos", del1D:"Cortada: frenaba el ritmo y no aportaba a la búsqueda del código.", del2H:"Dardos", del2D:"Cortada: divertida diez segundos, lastre en una partida de cinco minutos.",
-    scUe:"Escena 5", ueH:"De HTML a Unreal", ueIntro:"Cuando una mecánica se sentía bien en HTML, la pasábamos a la especificación y se la entregábamos a Claude MCP por fases. La especificación también listaba lo que ya existía en Unreal (M_Can, BP_Can, tapa.png) y lo marcaba como intocable, para no reconstruir nada que ya funcionaba.", ue1Tag:"Duración", ue1H:"5 · 7 · 12 min", ue1D:"Tres modos configurables desde el GameMode. Siempre tres shows de baile, repartidos en el tiempo.", ue2Tag:"Tensión creciente", ue2H:"1.0× · 1.5× · 1.8×", ue2D:"Cada show acelera música y notas: 120, 180 y 216 BPM.", ue3Tag:"Tarde al escenario", ue3H:"2 strikes", ue3D:"Si ignoras el llamado del Director, te arrastran al escenario. A la segunda, se acabó.", ue4Tag:"Cinemáticas", ue4H:"4 videos", ue4D:"Intro, llamado al escenario, soborno y escape, en un widget a pantalla completa que pausa los relojes.", mi1:"Los mismos cuatro carriles, ahora con tres velocidades.", mi2:"La misma física, g = 408 px/s²: una atrapada perfecta paga $50.", mi3:"Ocho latas, veinte texturas y una tapa que se abre trazando un círculo en menos de 2 s.", mi4:"$500 al guardia, una cinemática y tres intentos con el código de 4 dígitos.", shotsH:"Detrás de cámaras", shot1:"Stream en Discord: depurando juntos", shot2:"El .md vivo, nuestra fuente única de verdad", shot3:"El ensayo fallido, antes de arreglar el flujo", act1T:"Toma 1", act1H:"El ensayo fallido", act1D:"Una semana antes de la jam simulamos un tema anterior, y todo se vino abajo.", act2T:"Toma 2", act2H:"La autopsia", act2D:"Listamos cada cuello de botella y mapeamos las fortalezas de cada quien.", act3T:"Toma 3", act3H:"El flujo", act3D:"Streams en Discord, una especificación .md viva y Claude MCP, listos antes de que arrancara el reloj.", mxH:"Quién hace qué", mxArt:"Arte y animación", mxCode:"Código", mxDes:"Diseño de juego", mxAud:"Audio", mxUi:"UX, UI e iluminación", mxAi:"Prompts y MCP", mxLeg:"● lidera · ◐ apoya",
+    scUe:"Escena 5", ueH:"De HTML a Unreal", ueIntro:"Cuando una mecánica se sentía bien en HTML, la pasábamos a la especificación y se la entregábamos a Claude MCP por fases. La especificación también listaba lo que ya existía en Unreal (M_Can, BP_Can, tapa.png) y lo marcaba como intocable, para no reconstruir nada que ya funcionaba.", ue1Tag:"Duración", ue1H:"5 · 7 · 12 min", ue1D:"Tres modos configurables desde el GameMode. Siempre tres shows de baile, repartidos en el tiempo.", ue2Tag:"Tensión creciente", ue2H:"1.0× · 1.5× · 1.8×", ue2D:"Cada show acelera música y notas: 120, 180 y 216 BPM.", ue3Tag:"Tarde al escenario", ue3H:"2 strikes", ue3D:"Si ignoras el llamado del Director, te arrastran al escenario. A la segunda, se acabó.", ue4Tag:"Cinemáticas", ue4H:"4 videos", ue4D:"Intro, llamado al escenario, soborno y escape, en un widget a pantalla completa que pausa los relojes.", mi1:"Los mismos cuatro carriles, ahora con tres velocidades.", mi2:"La misma física, g = 408 px/s²: una atrapada perfecta paga $25.", mi3:"Ocho latas, veinte texturas y una tapa que se abre trazando un círculo en menos de 2 s.", mi4:"$200 al guardia, una cinemática y tres intentos con el código de 4 dígitos.", shotsH:"Detrás de cámaras", shot1:"Stream en Discord: depurando juntos", shot2:"El .md vivo, nuestra fuente única de verdad", shot3:"El ensayo fallido, antes de arreglar el flujo", act1T:"Toma 1", act1H:"El ensayo fallido", act1D:"Una semana antes de la jam simulamos un tema anterior, y todo se vino abajo.", act2T:"Toma 2", act2H:"La autopsia", act2D:"Listamos cada cuello de botella y mapeamos las fortalezas de cada quien.", act3T:"Toma 3", act3H:"El flujo", act3D:"Streams en Discord, una especificación .md viva y Claude MCP, listos antes de que arrancara el reloj.", mxH:"Quién hace qué", mxArt:"Arte y animación", mxCode:"Código", mxDes:"Diseño de juego", mxAud:"Audio", mxUi:"UX, UI e iluminación", mxAi:"Prompts y MCP", mxLeg:"● lidera · ◐ apoya",
     galH:"Galería de fotos", galSoon:"Fotos próximamente", galPrev:"Foto anterior", galNext:"Foto siguiente", galClose:"Cerrar",
     premiseH:"La premisa",
     p1:"Eres una bailarina atrapada en un bar clandestino de los años treinta, y el Director te llama al escenario tres veces. Entre show y show, ocho mesas murmuran en Orrin, un idioma que no existe. Los subtítulos ayudan, en español o inglés.",
-    p2:"Solo una mesa dice el código del maletín, y cambia en cada partida. Junta $500 para sobornar al guardia, encuentra la segunda mitad del cierre gigante en las latas y escapa antes de que se acabe el reloj: 5, 7 o 12 minutos.",
+    p2:"Solo una mesa dice el código del maletín, y cambia en cada partida. Junta $200 para sobornar al guardia, encuentra la segunda mitad del cierre gigante en las latas y escapa antes de que se acabe el reloj: 5, 7 o 12 minutos.",
     p3:"Lo experimental está en el oído: aquí la información no se entrega, se escucha, se compara y se deduce.",
     st1:"Mesas", st2:"Intentos", st3:"Shows",
     n1:"El audio es ambiente y pista a la vez. Un idioma inventado nos permite que nadie “entienda” la escena de entrada: todos los jugadores empiezan igual de perdidos.",
@@ -1717,6 +1725,10 @@ if (gal) {
     })();
   }
 }
+
+/* ---------- team logo (slots marked data-logo; removed if the file is missing) ---------- */
+document.querySelectorAll('img[data-logo]').forEach(im => { im.onerror = () => im.remove(); im.src = CONFIG.logo; });
+const fav = document.createElement('link'); fav.rel = 'icon'; fav.href = CONFIG.logo; document.head.appendChild(fav);
 
 /* ---------- init ---------- */
 setLang(lang);
